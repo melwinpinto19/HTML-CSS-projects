@@ -1,0 +1,52 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.bg-hover:hover {
+  background-color: #0061ad;
+}
+
+.btn-hover {
+  background-color: transparent;
+  border: 0.1px solid #333333;
+  color: black;
+  height: 6.5vh;
+  width: 8.5vw;
+  border-radius: 3px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.btn-hover:hover {
+  color: #4dadf7;
+  border-color: #2294ed;
+  transition: all 0.1s ease-in;
+}
+.text-transform {
+  text-transform: capitalize;
+  list-style: none;
+  margin-bottom:1vh;
+}
+
+.footer .box .text-transform {
+  font-size: 16px;
+  color: #577592;
+}
+
+.footer .box .first {
+  font-size: 20px;
+  color: #183b56;
+  font-weight: 600;
+}

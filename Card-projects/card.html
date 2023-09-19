@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        /* background-color: aquamarine; */
+      }
+      .icons .icon1:hover {
+        /* transform: scale(1.1); */
+        transition: all 0.5s ease-in;
+        background-color: blue;
+      }
+      .icons .icon2:hover {
+        background-color: rgb(255, 36, 189);
+        transition: all 0.5s ease-in;
+      }
+      .icons .icon3:hover {
+        background-color: skyblue;
+        transition: all 0.5s ease-in;
+      }
+      .box {
+        /* height: 70vh; */
+        width: 30vw;
+        /* border-radius:2vw; */
+        border: 1px solid black;
+        border-radius:10px;
+      }
+      .box .image {
+        height: 40vh;
+        background: 
+          linear-gradient(to right, rgba(255, 0, 0, 0.497), rgba(128, 0, 128, 0.412)),url("img/profile.jpg");
+        /* background-position: center; */
+        background-size: 100% 100%;
+      }
+      .text-align-center {
+        text-align: center;
+      }
+      .description {
+        padding: 20px;
+        flex-direction: column;
+        /* background-color: red;
+         */
+        background-image: linear-gradient(to right, purple, blue);
+        color: white;
+        gap: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .icons {
+        /* display: none; */
+      }
+      .icons > div {
+        width: 10vw;
+        border: 1px solid black;
+        height: 10vh;
+      }
+      i {
+        font-size: 40px;
+      }
+      h2 {
+        width: 30vw;
+        /* height: 20vh; */
+        /* background-color: red; */
+        animation: animate 4s backwards;
+        letter-spacing: 10px;
+      }
+      @keyframes animate {
+        from {
+          width: 0;
+          color: transparent;
+        }
+        to {
+          width: 30vw;
+          color: white;
+          transform: scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flex-center">
+      <div class="box">
+        <div class="image"></div>
+        <div class="description flex-center">
+          <h2 class="flex-center">Web developer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+            saepe dicta enim ab doloribus quidem
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            cupiditate illo illum blanditiis quam, repellat eligendi
+            consequuntur sunt voluptatibus. Assumenda?
+          </p>
+        </div>
+        <div class="icons flex-center">
+          <div class="icon1 flex-center">
+            <i class="fa-brands fa-red fa-facebook fa-beat"></i>
+          </div>
+          <div class="icon2 flex-center">
+            <i class="fa-brands fa-instagram fa-beat"></i>
+          </div>
+          <div class="icon3 flex-center">
+            <i class="fa-brands fa-twitter fa-beat"></i>
+          </div>
+        </div>
+      </div><div class="box2">
+        <!-- <iframe src="dummy.html" frameborder="0" height="500px"></iframe> -->
+      </div>
+    </div>
+  </body>
+</html>
