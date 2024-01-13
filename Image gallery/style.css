@@ -69,3 +69,15 @@ body {
 .row-2 {
   grid-row: span 2;
 }
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap:5vh;
+    border:none;
+  }
+  .left,
+  .right {
+    width: 95vw;
+  }
+}
