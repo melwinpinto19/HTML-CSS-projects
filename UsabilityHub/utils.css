@@ -50,3 +50,10 @@
   color: #183b56;
   font-weight: 600;
 }
+
+@media (max-width:800px){
+  .hero-right{
+    height:20vh;
+    width: 25vw;
+  }
+}

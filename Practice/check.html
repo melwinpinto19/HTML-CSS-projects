@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+      .box {
+        height: 400px;
+        width: 400px;
+        border: 2px solid aqua;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all 3s linear;
+      }
+      .box div {
+        border-radius: 50%;
+        border: 2px solid;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box:hover {
+        rotate: 360deg;
+      }
+      .box1 {
+        top: -20px;
+        /* background-color:red; */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8RPrajC-C5Jqj3VOaHIT2xCrA5EoVxckTzhTuNXlCUA&s"
+        );
+        background-size: cover;
+      }
+      .box2 {
+        bottom: -20px;
+        background-color: blue;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwdOPSU8ZvGs4ZvCIg4fgxRJXg5W1RcEOplXBwH3uxjQ&s");
+        background-size: cover;
+        background-position: center;
+      }
+      .box3 {
+        left: -20px;
+        background-color: green;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7x3aMu7ftyHTYpQ_49MmeGVstu_IMQNIH9KAOZ1i0g&s");
+        background-size: cover;
+        background-position: center;
+       
+      }
+      .box4 {
+        right: -20px;
+        background-color: aqua;
+        background-color: green;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8RPrajC-C5Jqj3VOaHIT2xCrA5EoVxckTzhTuNXlCUA&s");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4">4</div>
+    </div>
+  </body>
+</html>
