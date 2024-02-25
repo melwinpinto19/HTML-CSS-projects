@@ -10,11 +10,14 @@ body {
 }
 
 .nav-bar {
-  height: 60px;
+  min-height: 60px;
+  width: 100vw;
   background-color: #0f1111;
   color: white;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
   align-items: center;
 }
 .border:hover {
@@ -53,7 +56,7 @@ body {
 }
 .search-input {
   height: 40px;
-  width: 600px;
+  width:30vw;
   border: none;
   font-size: 1.2rem;
 }
@@ -116,17 +119,23 @@ body {
 /* hero section */
 .hero-section {
   background-image: url("img/hero_image.jpg");
-  height: 60vh;
-  background-size: cover;
+  width: 100vw;
+  min-height: 60vh;
+  background-size: 100vw 60vh;
+  background-position: start center;
+  object-fit: cover;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 .hero-text {
   background-color: white;
-  height: 5vh;
+  min-height: 5vh;
   margin-bottom: 20px;
-  padding: 5px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
 }
 .hero-text p a {
   text-decoration: none;
@@ -135,27 +144,27 @@ body {
 
 /* category */
 .category {
-  height: 120vh;
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  align-content: center;
+  /* align-content: center; */
   background-color: grey;
+  gap: 20px;
 }
 .category > div {
-  height: 45%;
-  width: 23%;
+  height: 50vh;
+  width: 350px;
   border: 1px solid black;
   margin-top: 20px;
   background-color: white;
-}
-
-.category > div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
+
 .box1 .img-box {
   width: 80%;
   height: 80%;
@@ -230,13 +239,15 @@ footer .box1 a {
 
 footer .box2 {
   background-color: #222f3d;
-  height: 40vh;
+  min-height: 40vh;
 }
 
 footer .box2 {
   display: flex;
   padding-top: 30px;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
   color: white;
   line-height: 25px;
 }
@@ -253,32 +264,8 @@ footer .box3 {
   align-items: center;
 }
 
-/* media queries */
-@media screen and (max-width: 1200px) {
-  .search-input {
-    width: 200px;
-  }
-
-  .nav-bar .sign-in,
-  .orders {
-    font-size: 0.8rem;
-  }
-  .category {
-    height: 40vh;
-  }
-  .category > div {
-    height: 180px;
-    width: 180px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .category > div {
-    height: 150px;
-    width: 150px;
-  }
-  .hero-section{
-    background-size:100% 100%;
-    background-position:center;
+@media (max-width: 554px) {
+  .orders,.cart{
+    display: none;
   }
 }

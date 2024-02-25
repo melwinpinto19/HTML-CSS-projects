@@ -233,7 +233,7 @@ summary {
 
 @media (max-width: 950px) {
   html {
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
   }
   .f-d {
     flex-direction: column;
